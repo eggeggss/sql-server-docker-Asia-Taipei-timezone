@@ -5,7 +5,7 @@ FROM microsoft/mssql-server-linux:2017-latest
 
 RUN apt-get -y update && \
 apt-get install -y tzdata && \
-ln -fs /usr/share/zoneinfo/<h5 style='display:inline'>Asia/Taipei</h5>/etc/localtime && \
+<h5 style='display:inline'>ln -fs /usr/share/zoneinfo/Asia/Taipei/etc/localtime && \</h5>
 dpkg-reconfigure -f noninteractive tzdata &&\
 /opt/mssql/bin/mssql-conf set sqlagent.enabled true &&\
 /opt/mssql/bin/mssql-conf set hadr.hadrenabled 1
